@@ -1,0 +1,41 @@
+body
+{
+	margin-top: 150px;
+		
+	background-color: #ADD8E6;
+  	font-size:16px;
+  	color: #777;
+  	font-family:sans-serif;
+  	//font-width:400;
+}
+
+
+.button
+{
+	 background-color: #00CED1; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 10px;
+  	text-align: center;
+  	text-decoration:sans-serif ;
+  	//display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+	border-radius:8px;
+	align:center;
+}
+
+
+td
+{
+	//height:30px;
+	padding: 10px;
+	border-radius:8px
+	
+}
+input[type= "text" ],[type= "password"]
+{
+	border-radius:6px;
+	
+}

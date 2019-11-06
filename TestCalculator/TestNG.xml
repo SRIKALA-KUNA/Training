@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<suite name="Suite1" parallel="classes" thread-count="5">
+	<test name="test1">
+		<listeners>
+			<listener class-name="com.epam.TestCalculator.CustomListener" />
+		</listeners>
+
+		<classes>
+
+			<class name="com.epam.TestCalculator.CustomListener" />
+		</classes>
+	</test>
+	<test name="test2">
+		<groups>
+			<define name="normalFeatures">
+				<include name="sum" />
+				<include name="sub" />
+				<include name="mult" />
+				<include name="div" />
+				<include name="additional" />
+			</define>
+			<run>
+				<include name="normalFeatures" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.epam.TestCalculator.CalculatorTest" />
+			<class name="com.epam.TestCalculator.DataProviderClass" />
+		</classes>
+	</test>
+</suite>
