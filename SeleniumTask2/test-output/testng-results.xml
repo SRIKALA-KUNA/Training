@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11033" started-at="2019-11-13T18:10:38 IST" finished-at="2019-11-13T18:10:49 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11033" started-at="2019-11-13T18:10:38 IST" finished-at="2019-11-13T18:10:49 IST">
+      <class name="com.epam.SeleniumTask2.AutomateLinks">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.epam.SeleniumTask2.AutomateLinks@2b552920]" name="initialize" is-config="true" duration-ms="5634" started-at="2019-11-13T18:10:38 IST" finished-at="2019-11-13T18:10:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="testChallengingDom()[pri:0, instance:com.epam.SeleniumTask2.AutomateLinks@2b552920]" name="testChallengingDom" duration-ms="5361" started-at="2019-11-13T18:10:43 IST" finished-at="2019-11-13T18:10:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChallengingDom -->
+      </class> <!-- com.epam.SeleniumTask2.AutomateLinks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
