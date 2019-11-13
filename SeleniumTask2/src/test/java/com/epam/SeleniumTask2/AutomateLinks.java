@@ -79,6 +79,9 @@ public class AutomateLinks  {
 
 	}
 
+
+
+
 	@Test
 	void testStatusCodes()
 	{
@@ -86,33 +89,26 @@ public class AutomateLinks  {
 		driver.get("https://the-internet.herokuapp.com/status_codes");
 		List<WebElement> input = driver.findElements(By.xpath("//*[@id=\"content\"]//li/a"));
 		String presentPage = driver.getCurrentUrl();
+		String nextPage;
 		for(int pages =0 ;pages<input.size();pages++)
 		{
 			input = driver.findElements(By.xpath("//*[@id=\"content\"]//li/a"));
 			input.get(pages).click();
-			String nextPage = driver.getCurrentUrl();
+			nextPage = driver.getCurrentUrl();
 			assertNotEquals(presentPage,nextPage);
 			driver.navigate().back();
 		}
 	}
-
-	@Test
-	void testChallengingDom()
+	
+	@Test 
+	void testdynamicContent()
 	{
-		driver.get("https://the-internet.herokuapp.com/challenging_dom");
-		List<WebElement> buttons = driver.findElements(By.xpath("//div[@id='content']//div[@class='large-2 columns']/a"));
-	List<String> buttonNames = Arrays.asList("buz","foo","qux","bar");
-		for(int button=0;button<buttons.size();button++)
-		{
-		buttons = driver.findElements(By.xpath("//div[@id='content']//div[@class='large-2 columns']/a"));
-		
-		assert(buttonNames.contains(buttons.get(button).getText()));
-		buttons.get(button).click();
-		
-
-		}
-
+		//*[@id="content"]/div[3]/div[@class ='large-10 columns']
+		driver.get("https://the-internet.herokuapp.com/dynamic_content?with_content=static");
+		String data = driver.findElements(By.xpath("//*[@id=\"content\"]/div[3]/div[@class ='large-10 columns']")).get(0).getText();
+		//*[@id="content"]/div/p[2]/a
 	}
+
 
 
 
