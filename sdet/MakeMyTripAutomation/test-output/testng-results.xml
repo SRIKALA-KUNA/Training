@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="16748" started-at="2019-11-15T17:08:35 IST" finished-at="2019-11-15T17:08:52 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="16748" started-at="2019-11-15T17:08:35 IST" finished-at="2019-11-15T17:08:52 IST">
+      <class name="com.epam.MakeMyTripAutomation.VerifyHomePage">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.epam.MakeMyTripAutomation.VerifyHomePage@694e1548]" name="init" is-config="true" duration-ms="5770" started-at="2019-11-15T17:08:35 IST" finished-at="2019-11-15T17:08:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyMoreOptions()[pri:0, instance:com.epam.MakeMyTripAutomation.VerifyHomePage@694e1548]" name="verifyMoreOptions" duration-ms="10943" started-at="2019-11-15T17:08:41 IST" finished-at="2019-11-15T17:08:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMoreOptions -->
+      </class> <!-- com.epam.MakeMyTripAutomation.VerifyHomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
