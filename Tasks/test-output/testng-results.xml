@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27902" started-at="2019-11-17T11:07:44Z" finished-at="2019-11-17T11:08:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27902" started-at="2019-11-17T11:07:44Z" finished-at="2019-11-17T11:08:12Z">
+      <class name="HotelBooking.VerifyHotelBooking">
+        <test-method status="PASS" signature="init()[pri:0, instance:HotelBooking.VerifyHotelBooking@1e127982]" name="init" is-config="true" duration-ms="11829" started-at="2019-11-17T16:37:44Z" finished-at="2019-11-17T16:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyHotelBooking()[pri:0, instance:HotelBooking.VerifyHotelBooking@1e127982]" name="verifyHotelBooking" duration-ms="16036" started-at="2019-11-17T16:37:56Z" finished-at="2019-11-17T16:38:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHotelBooking -->
+      </class> <!-- HotelBooking.VerifyHotelBooking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
