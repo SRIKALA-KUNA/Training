@@ -1,6 +1,7 @@
 package mmtBooking;
 
 import java.io.IOException;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -11,48 +12,50 @@ import org.testng.annotations.Test;
 
 import com.epam.MakeMyTripAutomation.Settings;
 
+import Base.Base;
 import Page.FlightDealsPage;
 import Page.FlightPage;
 import Page.Home;
 import Page.LoginPage;
+import io.qameta.allure.Description;
 
 public class VerifyLogin {
 	WebDriver driver;
 	Settings settings;
 	LoginPage login ;
+	Properties prop;
 	@BeforeClass
 	void init()
 	{
-		Settings settings = new Settings();
-		this.driver = settings.getDriver();
+		settings = new Settings();
+		this.driver=settings.getDriver();
 		login = new LoginPage(driver);
 	}
-
-	@Test
+	@Description("verify login functionality")
+	@Test()
 	void verifyLogin()
 	{
 		try {
-			login.verifyLoginPage();
-			
+			driver.get(settings.baseUrl);
+			login.verifyUserName();
+			login.verifyPassrord();
+
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
-	@AfterClass
-	void close()
-	{
-		driver.close();
-	}
-	@AfterTest
+	@AfterMethod
 	public void screenshot()
 	{
 		try {
 			Settings.screenShot(driver);
 		} catch (IOException e) {
-			
+
 			e.printStackTrace();
 		}
 	}
+
+
 
 
 }

@@ -22,11 +22,13 @@ import org.testng.annotations.Test;
 import com.epam.MakeMyTripAutomation.Settings;
 
 import Page.HomePage;
+import io.qameta.allure.Description;
 
-public class VerifyHomePage extends Settings {
+public class VerifyHomePage  {
 	WebDriver driver;
+	Settings settings;
 	Logger logger  = Logger.getLogger( VerifyHomePage.class.getName()); 
-	private final String baseUrl ="https://www.makemytrip.com/";
+
 	private List<String> actual = new ArrayList<String>();
 	private final List<String> expected = new ArrayList<String>(Arrays.asList("https://www.makemytrip.com/flights/",
 			"https://www.makemytrip.com/hotels/",
@@ -36,32 +38,32 @@ public class VerifyHomePage extends Settings {
 			"https://www.makemytrip.com/bus-tickets/",
 			"https://www.makemytrip.com/cabs/",
 			"https://www.makemytrip.com/visa/",
-			"https://www.makemytrip.com/gift-cards/?intid=Header_ch_giftcard"));
+			"https://www.makemytrip.com/"));
 	HomePage home;
-	
+
 	@BeforeClass
 	void init()
 	{
-		Settings settings = new Settings();
+		settings = new Settings();
 
 		this.driver = settings.getDriver();
 		home = new HomePage(driver);
 	}
-
+	@Description("Home page Navigationbar automation")
 	@Test
 	void verifyNavigationBar()
 	{
 
-		driver.get(baseUrl);
+		driver.get(settings.baseUrl);
 
 		actual = home.verifyNavigationBar();
 		assertEquals(actual, expected );
 	}
-
+	@Description("Checking Home page BrokenLinks ")
 	@Test
 	void verifyBrokenLinks()
 	{
-		driver.get(baseUrl);
+		driver.get(settings.baseUrl);
 		List<String> brokenLinks = home.verifyFooterLinks();
 		for(String broken : brokenLinks)
 		{
@@ -73,7 +75,7 @@ public class VerifyHomePage extends Settings {
 	@Test
 	void verifyMouseHower()
 	{
-		driver.get(baseUrl);
+		driver.get(settings.baseUrl);
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//ul[@class ='makeFlex font12']/li[10]"))).build().perform();
 	}
@@ -83,7 +85,7 @@ public class VerifyHomePage extends Settings {
 	@Test
 	void verifyMoreOptions() 
 	{
-		driver.get(baseUrl);
+		driver.get(settings.baseUrl);
 		String actual;
 		try {
 			actual = home.verifyDeals();
@@ -91,20 +93,16 @@ public class VerifyHomePage extends Settings {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	@AfterClass
-	void close()
-	{
-		driver.close();
-	}
+
 	@AfterMethod
 	public void screenshot()
 	{
 		try {
 			Settings.screenShot(driver);
 		} catch (IOException e) {
-			
+
 			e.printStackTrace();
 		}
 	}

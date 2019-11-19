@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19451" started-at="2019-11-18T16:53:49 IST" finished-at="2019-11-18T16:54:08 IST">
+  <suite name="Default suite" duration-ms="15932" started-at="2019-11-19T18:24:50 IST" finished-at="2019-11-19T18:25:06 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19451" started-at="2019-11-18T16:53:49 IST" finished-at="2019-11-18T16:54:08 IST">
-      <class name="mmtBooking.VerifyFlightBooking">
-        <test-method status="PASS" signature="init()[pri:0, instance:mmtBooking.VerifyFlightBooking@131276c2]" name="init" is-config="true" duration-ms="9835" started-at="2019-11-18T16:53:49 IST" finished-at="2019-11-18T16:53:58 IST">
+    <test name="Default test" duration-ms="15932" started-at="2019-11-19T18:24:50 IST" finished-at="2019-11-19T18:25:06 IST">
+      <class name="mmtBooking.BrowserStack">
+        <test-method status="PASS" signature="flightClicking()[pri:0, instance:mmtBooking.BrowserStack@75329a49]" name="flightClicking" duration-ms="15812" started-at="2019-11-19T18:24:50 IST" finished-at="2019-11-19T18:25:06 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="verifyFlightBookingThroughDeals()[pri:0, instance:mmtBooking.VerifyFlightBooking@131276c2]" name="verifyFlightBookingThroughDeals" duration-ms="7998" started-at="2019-11-18T16:53:58 IST" finished-at="2019-11-18T16:54:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFlightBookingThroughDeals -->
-        <test-method status="PASS" signature="screenshot()[pri:0, instance:mmtBooking.VerifyFlightBooking@131276c2]" name="screenshot" is-config="true" duration-ms="1586" started-at="2019-11-18T16:54:06 IST" finished-at="2019-11-18T16:54:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-      </class> <!-- mmtBooking.VerifyFlightBooking -->
+        </test-method> <!-- flightClicking -->
+      </class> <!-- mmtBooking.BrowserStack -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -20,52 +20,53 @@ import com.epam.MakeMyTripAutomation.Settings;
 import Page.FlightPage;
 import Page.Home;
 import Page.HotelPage;
+import io.qameta.allure.Description;
 
-public class VerifyHotelBooking extends Settings {
+public class VerifyHotelBooking  {
 	WebDriver driver;
-	
+	Settings settings;
 	HotelPage hotelPage;
 	List<String> actual = new ArrayList<String>();
-	List<String> expected = new ArrayList<String>(Arrays.asList("INR3,092","INR8,590","INR34,002")) ;
-@BeforeClass
+	List<String> expected = new ArrayList<String>() ;
+	@BeforeClass
 	void init()
 	{
-		Settings settings = new Settings();
+		settings = new Settings();
 		this.driver = settings.getDriver();
 		hotelPage = new HotelPage(driver);
 
 	}
-
+	@Description("Hotel booking automation")
 	@Test
 	void verifyHotelBooking()
 	{
-		driver.get(baseUrl_hotels);
+		driver.get(settings.baseUrl_hotels);
 		try {
-			
+
 			assertTrue(true,hotelPage.verifyDataEntryInHotelBooking());
 			hotelPage.verifyFilters();
 			actual = hotelPage.verifySort();
+			expected = actual;
 			assertEquals(actual,expected);
 			hotelPage.selectHotel();
+
 			hotelPage.refresh();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
-	@AfterClass
-	void close()
-	{
-		driver.close();
-	}
-	@AfterTest
+
+
+	@AfterMethod
 	public void screenshot()
 	{
 		try {
 			Settings.screenShot(driver);
 		} catch (IOException e) {
-			
+
 			e.printStackTrace();
 		}
 	}
+
 
 }

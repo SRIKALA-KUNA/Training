@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mmtBooking.VerifyFlightBooking">
+      <class name="mmtBooking.VerifyHomePage">
         <methods>
-          <include name="close"/>
-          <include name="verifyFlightBooking"/>
+          <include name="verifyNavigationBar"/>
           <include name="screenshot"/>
           <include name="init"/>
         </methods>
-      </class> <!-- mmtBooking.VerifyFlightBooking -->
+      </class> <!-- mmtBooking.VerifyHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
