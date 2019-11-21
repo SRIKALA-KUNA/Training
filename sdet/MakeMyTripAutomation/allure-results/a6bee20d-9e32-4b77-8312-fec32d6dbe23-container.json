@@ -1,1 +1,0 @@
-{"uuid":"a6bee20d-9e32-4b77-8312-fec32d6dbe23","name":"mmtBooking.VerifyLogin","children":["df5495af-5215-4294-8527-f02b55cc4133"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1574152855287,"stop":1574152865225}],"afters":[],"links":[],"start":1574152855268,"stop":1574152897081}
