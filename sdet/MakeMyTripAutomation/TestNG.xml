@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<suite name="Suite1" parallel="methods" thread-count="5">
+	<listeners>
+		<listener
+			class-name="com.epam.MakeMyTripAutomation.CustomListener" />
+	</listeners>
+	<test name="test1">
+		<classes>
+			<class name="mmtBooking.VerifyFlightBooking" />
+			<class name="mmtBooking.VerifyHomePage" />
+			<class name="mmtBooking.VerifyHotelBooking" />
+			<class name="mmtBooking.VerifyLogin" />
+		</classes>
+	</test>
+</suite>

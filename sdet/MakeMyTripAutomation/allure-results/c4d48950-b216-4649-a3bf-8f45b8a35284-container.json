@@ -1,0 +1,1 @@
+{"uuid":"c4d48950-b216-4649-a3bf-8f45b8a35284","name":"mmtBooking.VerifyHotelBooking","children":["0336ff47-2d67-4fdf-a39b-6856bfac5fe5"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1574142379802,"stop":1574142389675}],"afters":[],"links":[],"start":1574142379781,"stop":1574142407852}

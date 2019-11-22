@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20307" started-at="2019-11-22T15:54:23 IST" finished-at="2019-11-22T15:54:43 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20307" started-at="2019-11-22T15:54:23 IST" finished-at="2019-11-22T15:54:43 IST">
+      <class name="mmtBooking.VerifyHomePage">
+        <test-method status="PASS" signature="init()[pri:0, instance:mmtBooking.VerifyHomePage@70e8f8e]" name="init" is-config="true" duration-ms="9842" started-at="2019-11-22T15:54:23 IST" finished-at="2019-11-22T15:54:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyMoreOptions()[pri:0, instance:mmtBooking.VerifyHomePage@70e8f8e]" name="verifyMoreOptions" duration-ms="10293" started-at="2019-11-22T15:54:33 IST" finished-at="2019-11-22T15:54:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMoreOptions -->
+        <test-method status="PASS" signature="close()[pri:0, instance:mmtBooking.VerifyHomePage@70e8f8e]" name="close" is-config="true" duration-ms="63" started-at="2019-11-22T15:54:43 IST" finished-at="2019-11-22T15:54:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- mmtBooking.VerifyHomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
