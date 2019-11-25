@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<suite name="Suite1" parallel="methods" thread-count="5">
+	<listeners>
+		<listener
+			class-name="listeners.CustomListener" />
+	</listeners>
+	<test name="test1">
+		<classes>
+			<class name="testrunner.Runner" />
+			
+		</classes>
+	</test>
+</suite>
