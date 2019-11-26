@@ -1,0 +1,12 @@
+[main] ERROR step_definations.HomePageStepDefination  - org.apache.http.client.ClientProtocolException
+[main] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/about-us/testimonial.doserver problem
+[main] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/holidays-international/visa-information.htmlserver problem
+[main] ERROR step_definations.HomePageStepDefination  - org.apache.http.client.ClientProtocolException
+[main] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/about-us/testimonial.doserver problem
+[main] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/holidays-international/visa-information.htmlserver problem
+[TestNG-PoolService-2] ERROR step_definations.HomePageStepDefination  - org.apache.http.client.ClientProtocolException
+[TestNG-PoolService-2] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/about-us/testimonial.doserver problem
+[TestNG-PoolService-2] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/holidays-international/visa-information.htmlserver problem
+[TestNG-PoolService-1] ERROR step_definations.HomePageStepDefination  - org.apache.http.client.ClientProtocolException
+[TestNG-PoolService-1] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/about-us/testimonial.doserver problem
+[TestNG-PoolService-1] INFO  step_definations.HomePageStepDefination  - https://www.makemytrip.com/holidays-international/visa-information.htmlserver problem
