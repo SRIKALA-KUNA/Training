@@ -1,0 +1,20 @@
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@5454d35e closed
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@5454d35e shut down
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@20c0a64d
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@5454d35e closed
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@5454d35e shut down
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@20c0a64d
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@119cbf96 closed
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@119cbf96 shut down
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@71329995
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to 10.71.8.234:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@119cbf96 closed
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@119cbf96 shut down
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@71329995
