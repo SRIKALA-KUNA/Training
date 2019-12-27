@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="23.40462">
+<testcase classname="Movie ticket booking feature" name="Movie ticket booking date feature negative test scenario" time="23.40462">
+<failure message="java.lang.AssertionError: expected [Select Date] but found [Error Occured]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:97)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:136)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:575)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:585)&#13;&#10;&#9;at steps.MovieBookingStep.verifyTitleOfDatePage(MovieBookingStep.java:152)&#13;&#10;&#9;at stepdefinitions.MovieTicketBookingStepDefinition.verifyTheUserIsInDatePage(MovieTicketBookingStepDefinition.java:91)&#13;&#10;&#9;at ✽.Then verify the user is in date Page(movieTicketBooking.feature:52)&#13;&#10;"><![CDATA[Given user opens application................................................passed
+When user is in date page and clicks on next button.........................passed
+Then verify the user is in date Page........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [Select Date] but found [Error Occured]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at steps.MovieBookingStep.verifyTitleOfDatePage(MovieBookingStep.java:152)
+	at stepdefinitions.MovieTicketBookingStepDefinition.verifyTheUserIsInDatePage(MovieTicketBookingStepDefinition.java:91)
+	at ✽.Then verify the user is in date Page(movieTicketBooking.feature:52)
+]]></failure>
+</testcase>
+</testsuite>
