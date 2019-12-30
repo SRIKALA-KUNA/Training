@@ -23,7 +23,7 @@ public class HomePage{
 	@Step("click on proceed button")
 	public void cliclOnProccedButton()
 	{
-		commonUtils.dynamicXpath(driver, "xpath", "book.now");
+		commonUtils.clickOn(proceed);
 	}
 
 	public WebDriver returnDriver() {

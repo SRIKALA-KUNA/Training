@@ -26,9 +26,9 @@ public class CommonPageOperations{
 	public void next() {
 		commonUtils =new Utils(driver);
 		try {
-			Utils.wait(2);
+			Utils.waitForSeconds(2);
 			commonUtils.clickOn(next);
-			Utils.wait(2);
+			Utils.waitForSeconds(2);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 			logger.error(e);

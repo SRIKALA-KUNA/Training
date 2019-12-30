@@ -57,6 +57,7 @@ public class Utils {
 		}
 	}
 	private  boolean isElementPresent(WebElement element) {
+		//element.getSize()
 		return element.isDisplayed();		
 	}
 	public void dynamicXpath(WebDriver driver, String typeOfElement,String name)
@@ -66,35 +67,35 @@ public class Utils {
 		case "xpath": 
 			if(isElementPresent(driver.findElement(By.xpath(prop.getProperty(name)))))
 			{
-				driver.findElement(By.xpath(prop.getProperty(name))).click();
+				clickOn(driver.findElement(By.xpath(prop.getProperty(name))));
 			}
 			else
 			{
-				wait(driver);
+				waitForElement(driver);
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(prop.getProperty(name))));
-				driver.findElement(By.xpath(prop.getProperty(name))).click();
+				clickOn(driver.findElement(By.xpath(prop.getProperty(name))));
 			}
 			break;
 		case "id":
 			if(isElementPresent(driver.findElement(By.id(prop.getProperty(name)))))
 			{
-				driver.findElement(By.id(prop.getProperty(name))).click();
+				clickOn(driver.findElement(By.id(prop.getProperty(name))));
 			}
 			else
 			{
-				wait(driver);
+				waitForElement(driver);
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(prop.getProperty(name))));
-				driver.findElement(By.id(prop.getProperty(name))).click();
+				clickOn(driver.findElement(By.id(prop.getProperty(name))));
 			}
 			break;
 		}
 	}
-	public static  void wait(WebDriver driver)
+	public static  void waitForElement(WebDriver driver)
 	{
 		 wait=new WebDriverWait(driver, 10);
 	}
 
-	public static void wait(int time) throws InterruptedException
+	public static void waitForSeconds(int time) throws InterruptedException
 	{
 		Thread.sleep(time *(long)1000);
 	}

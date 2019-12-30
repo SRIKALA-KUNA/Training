@@ -48,6 +48,6 @@ public class SeatPage {
 	
 	public void book()
 	{
-		commonUtils.dynamicXpath(driver, "xpath", "book");;
+		commonUtils.clickOn(book);
 	}
 }

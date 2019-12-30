@@ -52,13 +52,13 @@ public class MovieBookingStep {
 	public void bookTicket(List<List<String>> data) {
 		loginUsingCredentials(data.get(1).get(0), data.get(1).get(1));
 		try {
-			Utils.wait(2);
+			Utils.waitForSeconds(2);
 		} catch (InterruptedException e1) {
 			Thread.currentThread().interrupt();
 		}
 		proceedForBooking();
 		try {
-			Utils.wait(2);
+			Utils.waitForSeconds(2);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
@@ -69,7 +69,7 @@ public class MovieBookingStep {
 		selectTime();
 		selectSeats();
 		try {
-			Utils.wait(2);
+			Utils.waitForSeconds(2);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
@@ -81,7 +81,7 @@ public class MovieBookingStep {
 	}
 	public  List<String> getTicketData() {
 		try {
-			Utils.wait(2);
+			Utils.waitForSeconds(2);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
@@ -92,7 +92,7 @@ public class MovieBookingStep {
 		seat = new SeatPage(time.returnDriver());
 		seat.selectSeatOption();
 		try {
-			Utils.wait(2);
+			Utils.waitForSeconds(2);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
@@ -136,7 +136,7 @@ public class MovieBookingStep {
 	}
 
 	public void next() {
-		location = new LocationPage(login.returnDriver());
+		commonPageOperations = new CommonPageOperations(login.returnDriver());
 		commonPageOperations.next();
 	}
 
